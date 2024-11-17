@@ -36,7 +36,7 @@ const HeroSection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg hover:shadow-xl transition-all">
+                <Button size="lg" className="text-white shadow-lg hover:shadow-xl transition-all">
                   Start Chatting Now
                 </Button>
                 

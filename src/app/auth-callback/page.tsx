@@ -1,10 +1,18 @@
-import React from 'react'
-import {verifyUser} from "./actions"
+import React from "react";
+import { verifyUser } from "./actions";
+import { redirect } from "next/navigation";
 
-const page = () => {
+const Page = async () => {
+  const { success } = await verifyUser();
+  if (success) {
+    redirect("/dashboard");
+  }
+
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      {!success && "An error occured with the account creation process."}
+    </div>
+  );
+};
 
-export default page
+export default Page;
