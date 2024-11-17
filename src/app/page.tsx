@@ -4,10 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import Image from 'next/image';
+import MaxWidthWrapper from '@/components/common/MaxWidthWrapper';
 
 const HeroSection = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 md:mt-12">
+    <MaxWidthWrapper className="mx-auto px-4 sm:px-6 lg:px-8 mt-8 md:mt-12">
       <div className="relative isolate overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 -z-10">
@@ -64,7 +65,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </MaxWidthWrapper>
   );
 };
 
